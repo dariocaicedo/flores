@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: white;
+    background: linear-gradient(270deg, #1ddf67, #8bf019, #cac711, #f7b501);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.container {
+    text-align: center;
+    background-color: #ffffff00;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+    
+}
+
+
+video {
+    width: 100%;  /* El video se ajustará al ancho del contenedor */
+    max-width: 900px;  /* Limita el ancho máximo del video */
+    height: auto;  /* Mantiene la proporción del video */
+    transition: opacity 1s;
+    /* Aplicar filtro de color 
+    filter: sepia(50%) hue-rotate(180deg) saturate(200%);*/
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+p{
+    font-size: 12px;
+    color: #000;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+
+}
+ 
+.flower {
+    position: absolute;
+    top: -50px;
+    width: 40px;
+    height: 40px;
+    background-image: url('flor.png'); /* Icono de flor */
+    background-size: cover;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+      transform: translateY(100vh);
+      opacity: 0.8;
+    }
+}

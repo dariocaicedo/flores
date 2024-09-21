@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flores Amarillas</title>
+	<link rel="stylesheet" href="styles.css">
+	<script>
+		let nombre = "";
+		nombre = prompt("¿Cuál es tu nombre?");
+		if (nombre) {
+			alert("¡Bienvenida " + nombre + "!");
+		} else {
+			alert("¡Bienvenida!"); // Si no ingresan nombre, un mensaje genérico.
+			nombre = " "; // Nombre por defecto
+		}
+		
+		window.onload = function() {
+			// Añadir el nombre al contenido del contenedor
+			document.getElementById("nombre").textContent = nombre;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>"Tal vez no sean reales, pero no te quedas sin tus flores amarillas"</h1>
+		<h1>¡Feliz Día Querida <span id="nombre" ></span>!</h1> <!-- Aquí aparecerá el nombre -->
+		<div class="flower-container">
+			<!-- Las flores se agregarán y eliminarán aquí mediante JavaScript -->
+		</div>
+		<div class="flower-rain">
+			<!-- Puedes agregar imágenes de flores aquí -->
+			<img src="flor.png" class="flower" alt="Flor">
+			<!-- Agrega más imágenes de flores si lo deseas -->
+		</div>
+		<div> 
+		
+		
+		<button class="button" onclick="redirigir()">¡Más Flores!</button>
+			<script>
+			// Función para redirigir
+			function redirigir() {
+			  window.location.href = 'lluvia.html'; // Aquí especifica la página a la que quieres redirigir
+			}
+		  	</script>
+
+	</div>
+	<p>
+		Sábado 21 - 09 - 2024                 
+	</p>
+	<script src="script.js"></script>
+	
+
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lluvia de Flores</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container"></div>
+			<video controls autoplay loop muted>
+				<source src="FLORES AMARILLAS - FLORICIENTA.mp4" type="video/mp4">
+				Tu navegador no soporta el elemento de video.
+			</video>
+			
+			<script>
+				const video = document.querySelector('video');
+			
+				// Pausar el video al hacer clic en él
+				video.addEventListener('click', () => {
+					if (video.paused) {
+						video.play();
+					} else {
+						video.pause();
+					}
+				});
+			
+				// Función para cambiar la opacidad del video
+				function cambiarOpacidad(opacidad) {
+					video.style.opacity = opacidad;
+				}
+			
+				// Cambia la opacidad cada 3 segundos
+				setInterval(() => {
+					cambiarOpacidad(video.style.opacity === "1" ? "0.5" : "1");
+				}, 3000);
+			</script>
+		
+    </div>
+	<p>
+		Sábado 21 - 09 - 2024                 
+	</p>
+
+  <script src="script1.js"></script>
+
+  
+</body>
+</html>

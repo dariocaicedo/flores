@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f7f7f7;
+    font-family: 'Quicksand', sans-serif;
+	background-image: url(fondo.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir toda la ventana */
+    background-position: center; /* Centra la imagen en la ventana */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+ 
+
+
+
+}
+
+.alert {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+
+
+.container {
+    text-align: center;
+    background-color: #ffffff00;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+    
+}
+
+h1 {
+    font-size: 36px;
+    color: #8B4513;
+    margin-top: 20px;
+    z-index: 1;
+    font-size: 2.5em;
+	margin-bottom: 20px;
+	color: #ff9800;
+}
+
+p{
+    font-size: 12px;
+    color: #000;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+#nombre {
+    color: #ee6c45;
+    font-weight: bold;
+}
+
+.flower-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+	gap: 15px;
+}
+
+.flower {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    position: relative;
+}
+
+.button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #ff5722;
+}
+
+.petal {
+    width: 45px;
+    height: 90px;
+    background-color: #fafa04;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 100%;
+}
+
+.p1 { transform: translate(-50%, -50%) rotate(0deg); }
+.p2 { transform: translate(-50%, -50%) rotate(36deg); }
+.p3 { transform: translate(-50%, -50%) rotate(72deg); }
+.p4 { transform: translate(-50%, -50%) rotate(108deg); }
+.p5 { transform: translate(-50%, -50%) rotate(144deg); }
+.p6 { transform: translate(-50%, -50%) rotate(180deg); }
+.p7 { transform: translate(-50%, -50%) rotate(216deg); }
+.p8 { transform: translate(-50%, -50%) rotate(252deg); }
+.p9 { transform: translate(-50%, -50%) rotate(288deg); }
+.p10 { transform: translate(-50%, -50%) rotate(324deg); }
+
+
+/* Agrega las siguientes clases para las animaciones */
+@keyframes fadeInPetal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutPetal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.petal {
+    /* Agrega una animación de entrada a los pétalos */
+    animation: fadeInPetal 0.5s ease-in-out both;
+}
+
